@@ -1,5 +1,13 @@
+/*1d Kinematics CSS*/
+
 header{
     text-align: center;
+    padding-top: 10px;
+}
+
+header a{
+    display: inline-block;
+    text-decoration: none;
 }
 
 .headerdiv{
@@ -9,11 +17,18 @@ header{
 }
 
 
-
 /*I am tired of writing the same things man*/
 
 input{
     padding: 10px 20px;
+    font-size: 20px;
+}
+
+/*More physics background CSS*/
+
+.physicsvalues{
+    text-align: center;
+    padding: 10px 50px;
 }
 
 /*Above is header below is variable work*/
@@ -23,29 +38,36 @@ input{
 }
 .physicsvalues label{
     display: flex;
-    justify-content: first baseline;
+    justify-content: center;
     align-items: center;
     font-size: 120%;
 }
 
 .submitbutton{
-    padding: 10px 20px;
+    padding: 10px 30px;
     margin-top: 10px;
 }
 
 /*Result thing is below main stuff above*/
 
 .finalresult{
-    padding: 10px;
+    text-align: center;
+    width: 300px;
+    padding: 0px 50px;
+    margin-top: 20px;
 }
-
-
 
 .finalresult h3{
     display: flex;
-    justify-content: first baseline;
+    justify-content: center;
     align-items: center;
     font-size: 120%;
+}
+
+.finalresult h2{
+   display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .finalresult p{
@@ -55,8 +77,9 @@ input{
 
 .maincontainer{
     display: flex;
+    justify-content: center;
     align-items: flex-start;
-    margin-left: 200px;
+    margin-top: 30px;
     gap: 70px;
 }
 
@@ -68,7 +91,7 @@ input{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0px;
+        
         gap: 30px;
     }
     .maincontainer h3{
@@ -85,6 +108,13 @@ input{
         align-items: center;
     }
 
+    .finalresult{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
     body{
         text-align: center;
     }
@@ -94,6 +124,110 @@ input{
 /*This section is wherre I style my UI to look good*/
 /*This section is wherre I style my UI to look good*/
 
-h1, h2, h3, h4, p, label, button{
+h1, h2, h3, h4, p, label, input, button{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*This section is supposed to be a wall between my 1 dimensional kinematics and 2 dimensional kinematics because it helps me stay organized
+This section is supposed to be a wall between my 1 dimensional kinematics and 2 dimensional kinematics because it helps me stay organized
+This section is supposed to be a wall between my 1 dimensional kinematics and 2 dimensional kinematics because it helps me stay organized
+This section is supposed to be a wall between my 1 dimensional kinematics and 2 dimensional kinematics because it helps me stay organized
+This section is supposed to be a wall between my 1 dimensional kinematics and 2 dimensional kinematics because it helps me stay organized
+This section is supposed to be a wall between my 1 dimensional kinematics and 2 dimensional kinematics because it helps me stay organized
+This section is supposed to be a wall between my 1 dimensional kinematics and 2 dimensional kinematics because it helps me stay organized
+This section is supposed to be a wall between my 1 dimensional kinematics and 2 dimensional kinematics because it helps me stay organized
+This section is supposed to be a wall between my 1 dimensional kinematics and 2 dimensional kinematics because it helps me stay organized*/
+
+/*2d Kinematics CSS*/
+
+
+
+.XContainer, .YContainer, .timeandsubmitsection{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.XContainer div, .YContainer div, .timeandsubmitsection div{
+    padding: 10px;
+}
+
+.XContainer label, .YContainer label, .timeandsubmitsection label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+}
+
+.TwodContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.alignmenthelper{
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.TwoDresults{
+    padding: 0 20px;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+}
+
+
+.timeandsubmitsection{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.submitbutton2d{
+    padding: 15px 60px;
+    margin-top: 10px;
+}
+
+.miniheader2d{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Stupid adaptive screen size stuff*/
+
+@media (max-width: 767px) {
+    .WholeContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .miniheader2d{
+        width: 500px;
+    }
+
+    .TwodContainer, .alignmenthelper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alignmenthelper{
+        margin-right: 500px;
+        gap: 30px;
+    }
+
+    .timeandsubmitsection{
+        margin-top: 35px;
+    }
 }
