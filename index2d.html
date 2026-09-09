@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="Favicon.png">
+    <title>My Perfect Kinematics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Perfect Kinematics</h1> 
+        
+        <p>A perfect world is a physics world!</p>
+
+        <a href="index.html">
+            <h4>
+                1d Kinematics
+            </h4>
+        </a>
+    </header>
+
+    <hr>
+
+    <div class="WholeContainer">
+        <div class="miniheader2d">
+            <h2>2 Dimensional Kinematics</h2>
+            <h4>Put in 3 values on 1 axis and 2 values on the other or put 2 values in both axes and put in time</h4>
+        </div>
+        
+        <hr>
+
+        <div class="TwodContainer">
+            <div class="XContainer">
+                <div class="X-axisheader">
+                    <h3>X Values</h3>
+                </div>
+
+                <div class="Xx">
+                    <label>Displacement/Distance(x):</label>
+                    <input id="distancex" placeholder="meters (m)" class="Kinematicsx-value">
+                </div>
+
+                <div class="ogVx">
+                    <label>Initial Velocity/Speed(v<sub>x</sub><sub>0</sub>):</label>
+                    <input id="speedogx" placeholder="meters per second (m/s)" class="Kinematicsx-value">
+                </div>
+
+                <div class="Vx">
+                    <label>Velocity/Speed(v<sub>x</sub>):</label>
+                    <input id="speedx" placeholder="meters per second (m/s)" class="Kinematicsx-value">
+                </div>
+
+                <div class="Ax">
+                    <label>Acceleration(a<sub>x</sub>):</label>
+                    <input id="accelerationx" placeholder="meters per second squared ()" class="Kinematicsx-value">
+                </div>
+            </div>
+
+            <!--I wrote this so I can see where X and Y is separated-->
+            <!--I wrote this so I can see where X and Y is separated-->
+            <!--I wrote this so I can see where X and Y is separated-->
+
+            <div class="YContainer">
+                <div class="Y-axisheader">
+                    <h3>Y Values</h3>
+                </div>
+
+                <div class="Yy">
+                    <label>Displacement/Distance(y):</label>
+                    <input id="distancey" placeholder="meters (m)" class="Kinematicsy-value">
+                </div>
+
+                <div class="ogVy">
+                    <label>Initial Velocity/Speed(v<sub>y</sub><sub>0</sub>):</label>
+                    <input id="speedogy" placeholder="meters per second (m/s)" class="Kinematicsy-value">
+                </div>
+
+                <div class="Vy">
+                    <label>Velocity/Speed(v<sub>y</sub>):</label>
+                    <input id="speedy" placeholder="meters per second (m/s)" class="Kinematicsy-value">
+                </div>
+
+                <div class="Ay">
+                    <label>Acceleration(a<sub>y</sub>):</label>
+                    <input id="accelerationy" placeholder="meters per second squared ()" class="Kinematicsy-value">
+                </div>
+            </div>
+        </div>
+
+        <div class="alignmenthelper">
+            <div class="timeandsubmitsection">
+                <div class="T">
+                    <label>Time(t):</label>
+                    <input id="time" placeholder="seconds (s)" class="Time-value">
+                </div>
+
+                <div class="Asubmitbutton2d">
+                    <button type="submit" id="submitting2d" class="submitbutton2d">
+                        Calculate
+                    </button>
+                </div>
+            </div>
+
+            <div class="TwoDresults">
+                <h3>Results</h3>
+                <h4 id="twodresults"></h4>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="index2d.JS"></script>
+</body>
+</html>
