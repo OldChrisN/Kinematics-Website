@@ -307,7 +307,14 @@ submittingproj.onclick = function(){
         }
 
         if(!isTimeSolved){
-            if(isVelocitySolved == true && isThetaSolved == true && isGravitySolved == true){
+            if(isDistanceySolved == true && isInitialSpeedySolved == true && isGravitySolved == true){
+                let solvedTime = (vy0 + Math.sqrt((vy0 ** 2) - (2 * g * y))) / g;
+                isTimeSolved = true;
+                t = (solvedTime);
+                resultLines.push(`t = ${(solvedTime.toFixed(2))}s`);
+            }
+
+            else if(isVelocitySolved == true && isThetaSolved == true && isGravitySolved == true){
                 let solvedTime = 2 * (v * Math.sin(θ)) / g;
                 isTimeSolved = true;
                 t = (solvedTime);
