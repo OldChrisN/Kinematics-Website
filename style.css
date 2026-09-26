@@ -10,12 +10,12 @@ header a{
     text-decoration: none;
 }
 
-.headerdiv{
-    border-radius: 10px;
-    display: inline-block;
-    padding: 20px;
+.linkgroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
-
 
 /*I am tired of writing the same things man*/
 
@@ -142,17 +142,16 @@ This section is supposed to be a wall between my 1 dimensional kinematics and 2 
 /*2d Kinematics CSS*/
 
 
-
-.XContainer, .YContainer, .timeandsubmitsection{
+.XContainer, .YContainer, .timeandsubmitsection, .GenContainer{
     text-align: center;
     padding: 10px 20px;
 }
 
-.XContainer div, .YContainer div, .timeandsubmitsection div{
+.XContainer div, .YContainer div, .timeandsubmitsection div, .GenContainer div{
     padding: 10px;
 }
 
-.XContainer label, .YContainer label, .timeandsubmitsection label{
+.XContainer label, .YContainer label, .timeandsubmitsection label, .GenContainer label{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,6 +201,20 @@ This section is supposed to be a wall between my 1 dimensional kinematics and 2 
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.headerdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Important{
+    width: 1000px;
+    max-width: 100%;
+    text-align: center;
+    
+}
+
 
 /*Stupid adaptive screen size stuff*/
 
