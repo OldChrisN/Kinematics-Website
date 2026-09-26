@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Perfect Kinematics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Perfect Kinematics</h1> 
+        
+        <p>A perfect world is a physics world!</p>
+
+        
+        <div class="linkgroup">
+            <a href="index.html">
+                <h4>
+                    1d Kinematics
+                </h4>
+            </a>
+
+            <a href="index2d.html">
+                <h4>
+                    2d Kinematics
+                </h4>
+            </a>
+        </div>
+    </header>
+
+    <hr>
+
+    <div class="WholeContainer">
+        <div class="headerdiv">
+            <div class="miniheader2d">
+                <h2>2 Dimensional Kinematics (Projectiles)</h2>
+                <h4>MAKE SURE TO READ THIS!</h4>
+                <h4 class="Important">Okay it's either you give me either V0 and Theta or v<sub>x</sub>0 and v<sub>y</sub>0 
+                    for the speeds and make sure to always put in gravity if you have no idea then just put in 9.8 also if the 
+                    gravity is negative then this calculator is not working. Now that you read the instructions just know that you 
+                    need to be accurate here since I didn't figure out a way for this page to calculate for every value with whatever 
+                    you give me, it can only do that if we have gravity, vx0 and vy0 or gravity, v0 and theta.
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="TwodContainer">
+            <div class="XContainer">
+                <div class="X-axisheader">
+                    <h3>X Values</h3>
+                </div>
+
+                <div class="Xx">
+                    <label>Displacement/Distance(x):</label>
+                    <input id="distancex" placeholder="meters (m)" class="Kinematicsx-value">
+                </div>
+
+                <div class="ogVx">
+                    <label>Initial Velocity/Speed(v<sub>x</sub><sub>0</sub>):</label>
+                    <input id="speedogx" placeholder="meters per second (m/s)" class="Kinematicsx-value">
+                </div>
+
+                <div class="Axproj">
+                    <label>Acceleration(a<sub>x</sub>):</label>
+                    <h3>0 m/s^2</h3>
+                </div>
+            </div>
+
+            <!--I wrote this so I can see where X and Y is separated-->
+            <!--I wrote this so I can see where X and Y is separated-->
+            <!--I wrote this so I can see where X and Y is separated-->
+
+            <div class="YContainer">
+                <div class="Y-axisheader">
+                    <h3>Y Values</h3>
+                </div>
+
+                <div class="Yy">
+                    <label>Displacement/Distance(y):</label>
+                    <input id="distancey" placeholder="meters (m)" class="Kinematicsy-value">
+                </div>
+
+                <div class="ogVy">
+                    <label>Initial Velocity/Speed(v<sub>y</sub><sub>0</sub>):</label>
+                    <input id="speedogy" placeholder="meters per second (m/s)" class="Kinematicsy-value">
+                </div>
+
+                <div class="Vy">
+                    <label>Velocity/Speed(v<sub>y</sub>):</label>
+                    <input id="speedy" placeholder="meters per second (m/s)" class="Kinematicsy-value">
+                </div>
+
+                <div class="g">
+                    <label>Gravity(g):</label>
+                    <input id="gravityg" placeholder="meters per second squared (m/s^2)" class="Kinematicsy-value">
+                </div>
+            </div>
+
+            <!--I wrote this so I can see where Y and Other is separated-->
+            <!--I wrote this so I can see where Y and Other is separated-->
+            <!--I wrote this so I can see where Y and Other is separated-->
+
+            <div class="GenContainer">
+                <div class="Otherheader">
+                    <h3>Other Values</h3>
+                </div>
+
+                <div class="V">
+                    <label>Velocity(v0):</label>
+                    <input id="velocity" placeholder="meters per second (m/s)" class="indspeed-value">
+                </div>
+
+                <div class="θ">
+                    <label>Theta(θ):</label>
+                    <input id="theta" placeholder="radians" class="indspeed-value">
+                </div>
+
+                <div class="timeandsubmitsection">
+                    <div class="T">
+                        <label>Time(t):</label>
+                        <input id="time" placeholder="seconds (s)" class="Time-value">
+                    </div>
+
+                    <div class="Asubmitbutton2d">
+                        <button type="submit" id="submittingproj" class="submitbutton2d">
+                            Calculate
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alignmenthelper">
+            <div class="TwoDresults">
+                <h3>Results</h3>
+                <h4 id="projresults"></h4>
+            </div>
+        </div>
+    </div>
+    
+    <script src="indexproj.JS"></script>
+</body>
+</html>
